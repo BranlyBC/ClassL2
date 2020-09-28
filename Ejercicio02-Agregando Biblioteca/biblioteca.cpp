@@ -5,7 +5,7 @@
 using namespace std;
 
 string libros[15][3];
-
+//Biblioteca Cargado y nombramiento del libro
 void cargarLibros() {
     
 	libros[0][0] = "Algoritmos"; 
