@@ -1,2 +1,1 @@
-startShip.h
-int  starShip ();
+int starShip();

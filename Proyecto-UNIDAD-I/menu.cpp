@@ -1,49 +1,41 @@
-# incluye  < iostream >
-# include  " snake.h "
-# incluye  " startShip.h "
+#include <iostream>
+#include "startShip.h"
+#include "snake.h"
 
-usando el  espacio de nombres  std ;
+using namespace std;
 
- menú vacío ()
+void menu()
 {
-   int opcion = 0 ;
-
-    mientras ( cierto )
-    {
-        sistema ( " cls " );
-        
-        cout << " ****** " ;
-        cout << " MENÚ DEL JUEGO " ;
-        cout << " ****** " ;
-        cout << endl;
-        cout << " 1 - Serpiente " << endl;
-        cout << " 2 - Nave espacial " << endl;
-        cout << " 0 - Salir " << endl;
-        cout << endl;
-        cout << " Ingrese una opcion: " ;
-        cin >> opcion;
-
-        si (opcion == 0 )
-        {
-            romper ;
-        }
-        si (opcion == 1 )
-        {
-            sistema ( " cls " );
-            serpiente ();
-            sistema ( " pausa " );
-        }
-        si (opcion == 2 )
-        {
-            sistema ( " cls " );
-            starShip ();
-            sistema ( " pausa " );
-        }
-        si (opcion < 0 || opcion> 2 )
-        {
-            sistema ( " cls " );
-            cout << " Debe ingresar una opcion entre 0, 1 y 2 " << endl;
-            romper ;
-        }
-    }
+	int opcion = 0;
+	
+	while(true)
+	{
+		system("cls");
+		
+		cout << "**************" << endl;
+		cout << "MENU DE JUEGOS" << endl;
+		cout << "**************" << endl;
+		cout << endl;
+		
+		cout << "Selecione un juego" << endl;
+		cout << "1 - startShip" << endl;
+		cout << "2 - snake" << endl;
+		cout << endl;
+		
+		cout << "Ingrese un numero del menu para seleccionar un juego: ";
+		cin >> opcion;
+		
+		switch(opcion)
+		{
+			case 1:
+				system ("cls");
+				starShip();
+				break;
+			case 2:
+				system ("cls");
+				snake();
+				break;
+		}
+		
+	}
 }

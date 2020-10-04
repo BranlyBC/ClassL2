@@ -1,4 +1,4 @@
-include <stdlib.h>
+#include <stdlib.h>
 #include <conio.h>
 #include <stdio.h>
 #include <windows.h>
@@ -78,17 +78,16 @@ void DrawGameLimits()
 }
 void WelcomeMessage()
 {
-    system("cls");
     int x = 13;
     int y = 6;
     gotoxy(x, y);
-    printf(" __                    __ _           _           ");
+    printf(" _____                    _____ _           _           ");
     gotoxy(x, y + 1);
-    printf("|   _|_ __ _ _   |   _| | _ _| |_ _ _ ");
+    printf("|   __|___ ___ ___ ___   |   __| |_ ___ ___| |_ ___ ___ ");
     gotoxy(x, y + 2);
-    printf("|_   | . | .'|  _| -|  |_   |   | . | . |  _| -|  _|");
+    printf("|__   | . | .'|  _| -_|  |__   |   | . | . |  _| -_|  _|");
     gotoxy(x, y + 3);
-    printf("|__|  _|,|_|_|  |_|||_|_|| |_|_|  ");
+    printf("|_____|  _|__,|___|___|  |_____|_|_|___|___|_| |___|_|  ");
     gotoxy(x, y + 4);
     printf("      |_|");
     gotoxy(x, y + 6);
@@ -206,7 +205,7 @@ public:
             gotoxy(x, y + 1);
             printf("  *  ");
             gotoxy(x, y + 2);
-            printf("***");
+            printf("*****");
             Sleep(100);
         }
     }
@@ -220,7 +219,7 @@ public:
         gotoxy(x, y + 1);
         printf("  *  ");
         gotoxy(x, y + 2);
-        printf("***");
+        printf("*****");
         Sleep(100);
         Erase();
         gotoxy(x, y);
