@@ -1,1 +1,2 @@
-int starShip();
+startShip.h
+int  starShip ();

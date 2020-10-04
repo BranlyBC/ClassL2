@@ -1,13 +1,12 @@
-#include <iostream>
-#include "menu.h"
+# incluye  < iostream >
+# incluir  " menu.h "
 
-using namespace std;
 
-int main(int argc, char const *argv[])
+usando el  espacio de nombres  std ;
+
+int  main ( int argc, char  const * argv [])
 {
-    system("cls");
-    
-    menu();
+	menú ();
 
-    return 0;
+    return  0 ;
 }
